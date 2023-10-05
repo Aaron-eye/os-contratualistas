@@ -1,0 +1,30 @@
+{
+  "name": "John Locke",
+  "passiveAbilities": {
+    "positivePassive": {
+      "name": "Tábula rasa",
+      "description": "Ganha +2 de Experiência ao derrotar um inimigo."
+    },
+    "negativePassive": {
+      "name": "",
+      "description": "“Não se pode mais argumentar com fanáticos munidos de um direito natural, que cada um entende como quer, aplica como lhe convém, no qual não tem que conceder nada, nem retirar nada.”: No início de cada turno, descarte 1 carta da sua mão."
+    }
+  },
+  "activeAbilities": [
+    {
+      "name": "Direito natural",
+      "description": "Concede Imunidade de batalha a um pensador por um turno.",
+      "cost": 4
+    },
+    {
+      "name": "Onde não há lei, não há liberdade",
+      "description": "Compre 3 cartas e descarte 1.",
+      "cost": 8
+    },
+    {
+      "name": "Limitação do Poder",
+      "description": "Anule os efeitos do adversário (cartas e líder) por 1 turno.",
+      "cost": 12
+    }
+  ]
+}

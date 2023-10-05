@@ -1,0 +1,30 @@
+{
+  "name": "Jean Jacques Rousseau",
+  "passiveAbilities": {
+    "positivePassive": {
+      "name": "Espírito revolucionário",
+      "description": "Invoque um token camponês a cada turno."
+    },
+    "negativePassive": {
+      "name": "",
+      "description": "“É que o poder social feria em todos os sentidos a independência individual sem, contudo, destruir-lhe a necessidade.”: Os pensadores aliados (exceto tokens) ingressam com -1/-1."
+    }
+  },
+  "activeAbilities": [
+    {
+      "name": "Contrato social",
+      "description": "Conceda +2/+2 a um aliado.",
+      "cost": 4
+    },
+    {
+      "name": "Todos os homens nascem livres",
+      "description": "Revive um pensador morto com 1/1.",
+      "cost": 8
+    },
+    {
+      "name": "Vontade geral",
+      "description": "Escolha um pensador no seu lado do campo. Todas as criaturas no campo de batalha igualam seus atributos aos dele.",
+      "cost": 12
+    }
+  ]
+}

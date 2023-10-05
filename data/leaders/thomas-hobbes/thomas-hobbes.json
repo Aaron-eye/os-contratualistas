@@ -1,0 +1,30 @@
+{
+  "name": "Thomas Hobbes",
+  "passiveAbilities": {
+    "positivePassive": {
+      "name": "Estado absolutista",
+      "description": "+10 de vida máxima ao líder."
+    },
+    "negativePassive": {
+      "name": "",
+      "description": "“Com a palavra 'absoluto', nem a liberdade, nem a paz, nem a felicidade, são possíveis sob quaisquer acordos institucionais. O governo popular é apenas uma tirania convulsiva; governo monárquico apenas um despotismo mais sombrio e taciturno.”: No final de cada turno, perca 2 pontos de vida do líder."
+    }
+  },
+  "activeAbilities": [
+    {
+      "name": "Soberania absoluta",
+      "description": "Invoque um token súdito.",
+      "cost": 4
+    },
+    {
+      "name": "O homem é o lobo do homem",
+      "description": "Destrua um inimigo aleatório.",
+      "cost": 8
+    },
+    {
+      "name": "Leviatã",
+      "description": "O adversário não pode atacar no próximo turno.",
+      "cost": 12
+    }
+  ]
+}

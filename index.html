@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Tangerine:wght@400;700&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="/img/os-contratualistas.ico" type="image/x-icon" />
+    <title>Os Contratualistas</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="leader-links">
+        <li><a href="#john-locke">Locke</a></li>
+        <li><a href="#jean-jacques-rousseau">Rousseau</a></li>
+        <li><a href="#thomas-hobbes">Hobbes</a></li>
+      </ul>
+    </nav>
+
+    <section class="leader-section">
+      <img class="background-img" src="/img/leader-card-model.png" alt="" />
+      <div class="leader-background"></div>
+      <div class="leader-main-box leader-box">
+        <h1 class="leader-name"></h1>
+        <img class="leader-image" src="" alt="" />
+      </div>
+      <div class="leader-abilities-box">
+        <div class="leader-actives-box leader-box">
+          <div>
+            <h3>Ativas</h3>
+            <div class="actives-container ability-container">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="leader-passives-box leader-box ability-container">
+          <h3>Passivas</h3>
+          <div class="positive-passive"></div>
+          <div>
+            <span>Passiva negativa: </span
+            ><span class="negative-passive ability-description"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <h2>Cartas</h2>
+      <div class="card-block">
+        <h3>Argumentos do discurso</h3>
+        <div class="arguments-container image-grid"></div>
+      </div>
+
+      <div class="card-block">
+        <h3>Pensadores</h3>
+        <div class="thinkers-container">
+          <div class="thinkers-with-effect-container image-grid"></div>
+          <div class="thinkers-without-effect-container image-grid"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script type="module" src="src/index.js"></script>
+
+  <footer>
+    <div class="creators">
+      Criadores: Dante Teles Ferreira e Luís Felipe de Oliveira Correia
+    </div>
+  </footer>
+</html>
