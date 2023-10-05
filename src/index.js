@@ -76,6 +76,7 @@ const loadLeader = async function () {
           `/img/leaders/${currentLeader}/${folder}`
         );
 
+        console.log(imagesPaths);
         for (const cardImagePath of imagesPaths) {
           const cardImg = document.createElement("img");
           cardImg.src = cardImagePath;
