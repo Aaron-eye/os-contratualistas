@@ -1,25 +1,27 @@
-export default async (folder) => {
+async function checkImageExists(url) {
+  return new Promise((resolve) => {
+    var img = new Image();
+    img.onload = () => resolve(true);
+    img.onerror = () => resolve(false);
+
+    img.src = url;
+  });
+}
+
+export default async (folder, imageBaseName) => {
   const imagePaths = [];
 
-  await new Promise(function (resolve, reject) {
-    $.ajax({
-      url: folder,
-      success: function (data) {
-        $(data)
-          .find("a")
-          .attr("href", function (i, val) {
-            if (val.match(/\.(jpe?g|png|gif)$/)) {
-              var decodedUrl = decodeURIComponent(val);
-              imagePaths.push(decodedUrl);
-            }
-          });
-        resolve(imagePaths);
-      },
-      error: function (xhr, status, error) {
-        reject(error);
-      },
-    });
-  });
+  let imageExists = true;
+  let i = 0;
+  while (imageExists) {
+    i++;
+    const imgUrl = `${folder}/${imageBaseName}-${i}.png`;
+    imageExists = await checkImageExists(imgUrl);
+
+    if (imageExists) {
+      imagePaths.push(imgUrl);
+    }
+  }
 
   return imagePaths;
 };

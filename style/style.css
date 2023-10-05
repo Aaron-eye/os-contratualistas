@@ -118,9 +118,9 @@ footer {
 }
 
 .leader-image {
-  margin: 2.8rem 0 0 0;
+  margin: 2rem 0 0 3rem;
 
-  width: 100%;
+  width: 75%;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;

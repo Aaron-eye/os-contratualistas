@@ -70,27 +70,35 @@ const loadLeader = async function () {
       negativePassiveContainer.innerHTML =
         data.passiveAbilities.negativePassive.description;
 
-      const addDeckImages = async function (folder, container) {
+      const addDeckImages = async function (folder, imageBaseName, container) {
         container.innerHTML = "";
-        const imagesPaths = await getImagesInFolder(
-          `/img/leaders/${currentLeader}/${folder}`
+        const imagePaths = await getImagesInFolder(
+          `/img/leaders/${currentLeader}/${folder}`,
+          imageBaseName
         );
 
-        console.log(imagesPaths);
-        for (const cardImagePath of imagesPaths) {
+        for (const cardImagePath of imagePaths) {
           const cardImg = document.createElement("img");
           cardImg.src = cardImagePath;
-          cardImg.alt = cardImagePath.split("/").at(-1).slice(0, -4);
-          /*const cardImgContainer = document.createElement("div");
-          cardImgContainer.appendChild(cardImg);*/
-
           container.insertAdjacentElement("beforeend", cardImg);
         }
       };
 
-      addDeckImages("arguments", argumentsContainer);
-      addDeckImages("thinkers/with-effect", thinkersContainer);
-      addDeckImages("thinkers/without-effect", thinkersWithoutEffectContainer);
+      addDeckImages(
+        "arguments",
+        `${currentLeader}-argument`,
+        argumentsContainer
+      );
+      addDeckImages(
+        "thinkers/with-effect",
+        `${currentLeader}-thinker-with-effect`,
+        thinkersContainer
+      );
+      addDeckImages(
+        "thinkers/without-effect",
+        `${currentLeader}-thinker-without-effect`,
+        thinkersWithoutEffectContainer
+      );
     })
     .catch((error) => console.error("Erro ao carregar o JSON: ", error));
 };
